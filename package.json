@@ -24,12 +24,12 @@
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/osmanarri/comp-229-assignment1.git"
+    "url": "https://github.com/osmanarri/comp-229-lab1"
   },
   "author": "Osman Tahir",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/osmanarri/comp-229-assignment1/issues"
+    "url": "https://github.com/osmanarri/comp-229-lab1/issues"
   },
-  "homepage": "https://github.com/osmanarri/comp-229-assignment1#readme"
+  "homepage": "https://github.com/osmanarri/comp-229-lab1#readme"
 }
