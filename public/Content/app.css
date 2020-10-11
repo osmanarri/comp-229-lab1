@@ -1,0 +1,240 @@
+/* css file styling all ejs files
+student name: osman tahir
+student # 301075554
+date: 10-09-2020 */
+
+body {
+  background-color: #23211f;
+  font-family: "Piazzolla", serif;
+  margin: 0;
+  padding: 0;
+  color: #eeeec1;
+  font-size: large;
+}
+nav {
+  width: 100%;
+  overflow: auto;
+  background-color: #11100f;
+}
+
+ul {
+  padding: 0;
+  margin: 0 0 0 250px;
+  list-style: none;
+}
+nav li {
+  float: right;
+}
+
+li a {
+  width: 100px;
+  display: block;
+  padding: 20px 15px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #eeeec1;
+  text-align: center;
+}
+
+li a:hover {
+  background-color: #b68d03;
+  color: white;
+  text-transform: uppercase;
+}
+
+.logo img {
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 0px;
+  height: 58px;
+  width: 150px;
+}
+.welcome {
+  text-align: center;
+  color: #fcd132;
+}
+h2 {
+  text-align: center;
+  color: #fcd132;
+}
+.about {
+  margin: 0;
+  padding: 5px;
+
+  text-align: center;
+}
+/* home page */
+.wrapper1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 65% 35%;
+  grid-column-gap: 0.5em;
+  grid-row-gap: 0.5em;
+}
+
+.box-1 {
+  background: #433f3c;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 10px;
+  text-align: center;
+}
+.box-2 {
+  background: #6c6662;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding: 10px;
+  text-align: center;
+}
+.box-3 {
+  background: #89827c;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding: 10px;
+  text-align: center;
+}
+/* about page */
+.wrapper2 {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-column-gap: 0.5em;
+}
+
+.wrapper2 div {
+  background: #6c6662;
+  padding: 1em;
+}
+.wrapper2 div:nth-child(odd) {
+  background: #433f3c;
+}
+/*projects page*/
+.wrapper3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 0.5em;
+  grid-row-gap: 0.5em;
+}
+
+.wrapper3 div {
+  background: #6c6662;
+  padding: 1em;
+  grid-row-gap: 0.5em;
+}
+.wrapper3 div:nth-child(odd) {
+  background: #433f3c;
+}
+/*services page*/
+.wrapper4 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+
+  grid-row-gap: 0.5em;
+  text-align: center;
+}
+.wrapper4 div {
+  background: #6c6662;
+  padding: 1em;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.wrapper4 div:nth-child(odd) {
+  background: #433f3c;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+/* contact page */
+.wrapper5 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 0.5em;
+  grid-row-gap: 0.5em;
+}
+
+.box-4 {
+  background: #383532;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  padding: 20px 20px;
+}
+.box-5 {
+  background: #5a5552;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding: 10px;
+  text-align: center;
+}
+.box-6 {
+  background: #7e7772;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding: 10px;
+  text-align: center;
+}
+/*form*/
+form {
+  display: table;
+}
+form > p {
+  display: table-row;
+}
+label {
+  display: table-cell;
+}
+input {
+  display: table-cell;
+}
+
+/*buttons*/
+
+button,
+.submit {
+  border: none;
+  color: 23211f;
+  padding: 11px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #fcd132;
+}
+button:hover,
+.submit:hover {
+  background-color: #b68d03;
+  color: #eeeec1;
+}
+.myPhoto {
+  padding: 2px;
+  position: relative;
+  left: 20px;
+}
+
+.img {
+  width: 200px;
+  height: 150px;
+  padding: 10px;
+  border: 2px solid black;
+}
+.proj {
+  text-align: center;
+}
+
+a {
+  color: rgb(240, 116, 233);
+}
+a:hover {
+  color: rgb(161, 69, 161);
+}
+
+.wrapper6 input {
+  width: 100%;
+  clear: both;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #f1f1a5;
+  color: #433f3c;
+}

@@ -1,0 +1,35 @@
+{
+  "name": "comp229-f2020-week3",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./server.js"
+  },
+  "engines": {
+    "node": "^12.18.3",
+    "npm": "^6.0.0"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "description": "demo app for comp229",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osmanarri/comp-229-assignment1.git"
+  },
+  "author": "Osman Tahir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osmanarri/comp-229-assignment1/issues"
+  },
+  "homepage": "https://github.com/osmanarri/comp-229-assignment1#readme"
+}
