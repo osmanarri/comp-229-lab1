@@ -1,0 +1,54 @@
+<%- include ../partials/header.ejs %>
+
+<!-- Message Area -->
+<div class="errMessage">
+<% if(messages.length > 0) {%>
+
+  <div>
+    <%= messages %>
+  </div>
+
+<% } %>
+</div>
+
+<h2>Please Login</h2>
+<form  method="POST" autocomplete="off" class="login">
+    <div class="box">
+        <label for="username">Username </label>
+        <input type="text" name="username" placeholder="Enter username" id="username" 
+        required autofocus>
+    </div>
+
+    <div class="box">
+        <label for="password">Password </label>
+        <input type="password" name="password" placeholder="Enter password" id="password" 
+        required>
+        <p>
+        OR
+      </p>
+        <a href="/register">Register Here</a>
+    </div>
+
+    <div class="box">
+     
+        <input type="submit" value="login" class="submit">
+
+        <a href="/">
+        <input type="button" value="Cancel" class="delete">
+       </a>
+      
+    </div>
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+<%- include ../partials/footer.ejs %>

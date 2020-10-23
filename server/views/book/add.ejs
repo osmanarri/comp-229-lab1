@@ -1,0 +1,40 @@
+<%- include ../partials/header.ejs %>
+
+<!-- Content for the Add page -->
+
+
+<div class="addBook">
+
+    <form  method= "POST" class="box">
+      <p>
+        <label for="contactName">Contact Name</label>
+        <input type="text" id="contactName" name="contactName" placeholder=" Contact Name" required autofocus/><br />
+      </p>
+      <p>
+        <label for="contactNumber">Contact Number</label>
+        <input type="text" id="contactNumber" name="contactNumber" placeholder=" Contact Number" required/><br />
+      </p>
+      <p>
+        <label for="emailAddress">Email</label>
+        <input type="email" id="emailAddress" name="emailAddress" placeholder="example@email.com" required/><br />
+      </p>
+      <!-- <p>
+        <label for="genre">Genre</label>
+        <input type="text" id="genre"  name="genre" placeholder=" Book's genre"> <br/>
+      </p>
+      <p>
+        <label for="price">Price</label>
+        <input type="text" id="price" name="price" min="0" max= "1000" step = "1" placeholder=" Price"/><br /><br>
+      
+              
+      </p> -->
+
+       <button>Add</button>
+        
+        <a href="/contact-list"><button class="delete">Cancell</button></a>        
+      
+    </form>
+</div>
+
+
+<%- include ../partials/footer.ejs %>

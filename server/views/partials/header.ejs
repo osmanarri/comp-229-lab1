@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="logo">
-      <a href="/home"><img src="/Assets/images/logo.png" /></a>
+      <a href="/home"><img src="../Assets/images/logo.png  " /></a>
     </div>
 
     <nav>
@@ -21,10 +21,27 @@
         <li><a href="/projects">Projects</a></li>
         <li><a href="/services">Services</a></li>
         <li><a href="/contact">Contact</a></li>
+        <li><a href="/contact-list">Contact List</a></li>
+        
+        <% if(typeof displayName == 'string' && displayName) {%>
+          
+          <li><a href="/logout">Logout</a></li>
+          <div class="msg">
+          <li>Welcome, <%= displayName %></li>
+        </div>
+    
+        <% } else { %>
+          <li><a href="/login">Login</a></li>    
+          <% } %> 
       </ul>
     </nav>
     <div>
       <h1 class="welcome">Welcome To The <%= title %> Page</h1>
+     
     </div>
+
+    
+
+     
   </body>
 </html>

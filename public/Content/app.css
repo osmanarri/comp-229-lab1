@@ -29,7 +29,7 @@ nav li {
 li a {
   width: 100px;
   display: block;
-  padding: 20px 15px;
+  padding: 19px 10px;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   color: #eeeec1;
@@ -37,9 +37,8 @@ li a {
 }
 
 li a:hover {
-  background-color: #b68d03;
-  color: white;
-  text-transform: uppercase;
+  background-color: #fcd132;
+  color: black;
 }
 
 .logo img {
@@ -171,18 +170,11 @@ h2 {
   padding: 10px;
   text-align: center;
 }
-/*form*/
-form {
-  display: table;
-}
-form > p {
-  display: table-row;
-}
+
 label {
-  display: table-cell;
-}
-input {
-  display: table-cell;
+  float: left;
+  width: 10em;
+  margin-right: 1em;
 }
 
 /*buttons*/
@@ -204,6 +196,21 @@ button:hover,
   background-color: #b68d03;
   color: #eeeec1;
 }
+.delete {
+  border: none;
+  background-color: #db5d47;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 11px 20px;
+}
+.delete:hover {
+  background-color: #a73824;
+  color: white;
+}
+
 .myPhoto {
   padding: 2px;
   position: relative;
@@ -222,6 +229,7 @@ button:hover,
 
 a {
   color: rgb(240, 116, 233);
+  text-decoration: none;
 }
 a:hover {
   color: rgb(161, 69, 161);
@@ -237,4 +245,83 @@ footer {
   padding: 3px;
   background-color: #f1f1a5;
   color: #433f3c;
+}
+#book {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+#book td,
+#book th {
+  border: 5px solid #23211f;
+  padding: 8px;
+}
+
+#book tr:nth-child(even) {
+  background-color: #6c6662;
+}
+#book tr:nth-child(odd) {
+  background-color: #433f3c;
+}
+
+#book tr:hover {
+  background-color: #f1f1a5;
+  color: black;
+}
+
+#book th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #fcd132;
+  color: black;
+  text-align: center;
+}
+
+#book .delEdit {
+  border-collapse: collapse;
+}
+
+.add {
+  font-weight: bold;
+  font-size: x-large;
+  background-color: rgb(91, 195, 91);
+  position: relative;
+  /* top: 50%; */
+  left: 0.5%;
+}
+.add:hover {
+  background-color: rgb(41, 160, 41);
+  color: white;
+}
+
+.register,
+.login,
+.addBook,
+.edit {
+  background: #383532;
+  display: grid;
+  /* width: 50%; */
+  grid-template-columns: auto auto auto auto auto;
+  /* grid-column-gap: 0.5em; */
+  /* grid-row-gap: 0.5em; */
+}
+
+.box {
+  /* background: #433f3c; */
+  grid-column-start: 3;
+  grid-column-end: 4;
+  padding: 10px;
+  text-align: center;
+}
+
+.msg {
+  color: rgb(155, 235, 155);
+  padding: 15px;
+}
+
+.errMessage {
+  text-align: center;
+  color: red;
 }

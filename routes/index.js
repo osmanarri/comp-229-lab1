@@ -36,9 +36,9 @@ router.get("/contact", function (req, res, next) {
   res.render("contact", { title: "Contact" });
 });
 
-// capturing any unavailable route
-router.get("*", function (req, res) {
-  res.render("index", { title: "Home" });
-});
+
+// router.get("/book-list", function (req, res) {
+//   res.render("index", { title: "Home" });
+// });
 
 module.exports = router;

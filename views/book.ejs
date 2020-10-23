@@ -1,0 +1,55 @@
+<%- include partials/header.ejs %>
+
+<div>
+
+    <!-- <div class="box-1" >
+        <p>Hello Everyone, Welcome To My Website!</p>
+        
+        <h2>It's Nice To Meet You.</h2>
+        <a href="/about"><button>Meet Me</button></a>
+    </div>
+
+    <div class="box-2" >
+        <h2>My Mission:</h2>
+        <p>To encourage everyone I interact with on a daily basis.</p>
+       
+    </div>
+
+    <div class="box-3">
+        
+        <a href="/contact"><button>Contact Me</button></a>
+        <a href="/projects"><button>Projects</button></a>
+        <a href="/services"><button>Services</button></a>
+    </div>
+    
+</div> -->
+
+    
+        <h2><%= title %></h2>
+        <br>
+        <table id="book">
+            <!-- Header Row-->
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Year</th>
+                <th>Country</th>
+                <th>Price</th>
+            </tr>
+
+            <!-- Repeatable Template Row -->
+
+            <% for(let count = 0; count < BookList.length; count++) { %>
+                <tr>
+                    <td><%= BookList[count].title %></td>
+                    <td><%= BookList[count].author %></td>
+                    <td><%= BookList[count].year %></td>
+                    <td><%= BookList[count].country %></td>
+                    <td><%= BookList[count].price %></td>
+                </tr>
+            <% } %>
+        </table>
+   
+
+  <%- include partials/footer.ejs %>
+

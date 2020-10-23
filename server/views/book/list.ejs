@@ -1,0 +1,54 @@
+<%- include ../partials/header.ejs %>
+
+    
+        <h2><%= title %></h2>
+
+        <% if(typeof displayName == 'string' && displayName) {%>
+
+         <a href="/contact-list/add"><button class="add"> <span>+</span> Add a Contact </button></a>
+        <% } %>
+
+        <br>
+        <table id="book">
+            <!-- Header Row-->
+            <tr>
+                <th>Contact Name</th>
+                <th>Contact Number</th>
+                <th>Email Address</th>
+                <!-- <th>Genre</th>
+                <th>Price</th> -->
+
+                <% if(typeof displayName == 'string' && displayName) {%>
+
+                <th class="delEdit">Update</th>
+                <th class="delEdit">Delete</th>
+                <% } %>
+            </tr>
+
+            <!-- Repeatable Template Row -->
+
+            <% for(let count = 0; count < BookList.length; count++) { %>
+                <tr>
+                    <td><%= BookList[count].name %></td>
+                    <td><%= BookList[count].number %></td>
+                    <td><%= BookList[count].email %></td>
+             
+
+                    <% if(typeof displayName == 'string' && displayName) {%>
+               
+                    <td>
+                        <a href="/contact-list/edit/<%= BookList[count]._id %>"><button class="list-btn"> Update </button></a>
+                    </td>
+                    <td>
+                        <a href="/contact-list/delete/<%= BookList[count]._id %>"><button class="delete"> Delete </button></a>
+                    </td>
+               
+                    <% } %>
+                    
+                </tr>
+            <% } %>
+        </table>
+        
+
+  <%- include ../partials/footer.ejs %>
+
